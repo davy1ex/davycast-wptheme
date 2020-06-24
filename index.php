@@ -1,57 +1,121 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package davycast
- */
+<?php wp_head()?> 
+<?php get_header(); ?>
+<div class="first_block site_section" data-aos="fade-up">
+        <h2>Main Event 2020</h2>
 
-get_header();
-?>
+        <div class="big_text">Interview with top hackers </div>
+        <div class="big_text">Conference 2020</div>
 
-	<main id="primary" class="site-main">
+        <h2>September 6th-7th, Minnesota, United States</h2>
 
-		<?php
-		if ( have_posts() ) :
+        <div data-aos="fade-up" class="button_buy_ticket">
+            buy tickets
+        </div>
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+		
+    </div>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+    <div data-aos="fade-up" class="speakers site_section" >
+        <div class="title">
+            Speakers
+            <div class="line"></div>
+        </div>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+        <div class="speaker odd">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="photo"><img src="img/speakers/heckerman.jpg" alt=""></div>
+            <div data-aos="fade-right" class="text">
+                <div class="name">Heckerman</div>
+                <div class="desc">                    
+                    "The Pentagon hacked in a foreign language lesson from boredom" - these are the first words of this dude as soon as we met him live. Hacks in the morning for lunch and in the evening everything that moves
+                </div>
+            </div>
+        </div>
 
-			endwhile;
+        <div class="speaker even">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="photo"><img src="img/speakers/hacker2.jpg" alt=""></div>
+            <div data-aos="fade-right" class="text">
+                <div class="name">Hacker</div>
+                <div class="desc">                    
+                    This guy's motto is "People are stupid, so hackers always win." Simple and concise.
+                </div>
+            </div>
+        </div>
 
-			the_posts_navigation();
+        <div class="speaker odd">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="photo"><img src="img/speakers/hacker3.jpg" alt=""></div>
+            <div data-aos="fade-right" class="text">
+                <div class="name">Hacer</div>
+                <div class="desc">                    
+                    This guy is not as simple as it seems. Hacks everything: from toasters to your mothers. Hacknet and you, if ordered as a black hacker
+                </div>
+            </div>
+        </div>        
+    </div>
 
-		else :
+    <div data-aos="fade-up" class="site_section">
+        <div class="title">
+            Programs
+            <div class="line"></div>
+        </div>
 
-			get_template_part( 'template-parts/content', 'none' );
+        <div class="programs_list">
+            <div data-aos="fade-up" data-aos-duration="2000" class="list_item">
+                <div class="time">8:00 <span class="ampm">am</span></div>
+                <div class="list_desc">
+                    <div class="title">How to hack someone else’s neighbor</div>
+                    <div class="author">Hacker</div>
+                </div>
+            </div>
 
-		endif;
-		?>
+            <!-- <hr> -->
 
-	</main><!-- #main -->
+            <div data-aos="fade-up" data-aos-duration="2000" class="list_item">
+                <div class="time">12:00 <span class="ampm">am</span></div>
+                <div class="list_desc">
+                    <div class="title">Hack
+                        Hack that shit
+                        Hack give it to me</div>
+                    <div class="author">Heckerman</div>
+                </div>
+            </div>
 
-<?php
-get_sidebar();
-get_footer();
+            <!-- <hr> -->
+
+            <div data-aos="fade-up" data-aos-duration="2000" class="list_item">
+                <div class="time">18:00 <span class="ampm">pm</span></div>
+                <div class="list_desc">
+                    <div class="title">How hac anybody?</div>
+                    <div class="author">Hacer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos="fade-up" class="site_section">
+        <div class="title">
+            Sponsors
+            <div class="line"></div>
+        </div>
+        
+        <div class="sponsors_list">
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" class="sponsor">
+                <img src="img/sponsors/logo_2.png" alt="">
+            </div>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" class="sponsor">
+                <img src="img/sponsors/logo_5.png" alt="">
+            </div>
+        </div>
+
+        <div data-aos="fade-up" class="be_a_sponsor">
+            <a href="#">Be a Sponsor</a>
+        </div>
+
+    </div>
+<?php get_footer(); ?>

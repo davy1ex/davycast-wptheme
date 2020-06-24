@@ -1,0 +1,227 @@
+.site_section {
+    width: 70%;
+    min-height: 50vh;
+    /* padding: 10em; */
+    margin: auto;
+}
+
+.first_block {
+    padding-top: 200px;
+}
+
+.big_text {
+    font-size: 100px;
+    background: linear-gradient(45deg, #b20023,#FB8A01);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button_buy_ticket {
+    width: 120px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background: #3F4046;
+}
+
+.button_buy_ticket:hover {
+    background: linear-gradient(45deg, #b20023,#FB8A01);
+}
+
+.title {
+    width: 20%;
+    text-align: center;
+    font-size: 40px;
+    margin: 200px 0 60px 0;
+}
+
+.title .line {
+    /* position: absolute; */
+    left: -20%;
+    /* text-align: left; */
+    height: 2px;
+    width: 100px;
+    background: linear-gradient(45deg, #b20023,#FB8A01);
+}
+
+
+
+/* SPEAKERS */
+.speaker {
+    display: flex;    
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.even {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.speaker .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.speaker img {
+    width: 660px;
+    width: 660px;
+}
+
+
+
+.speaker .name {
+    font-size: 40px;
+    margin-left: 2%;
+}
+
+.text .desc {
+    margin: 5%;
+}
+/* SPEAKERS */
+
+
+
+/* LIST PROGRAMS */
+.programs_list {
+    width: 90%;
+    margin: auto;
+}
+
+.list_item:first-child {
+    border-top: 1px solid #383B4F;
+}
+
+.list_item {
+    height: 150px;
+    border-bottom: 1px solid #383B4F;
+    display: flex;
+    padding: 10px 0;
+    flex-direction: row;
+}
+
+.list_desc {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;    
+    font-size: 25px;
+}
+
+.list_item .time, .list_item .title {
+    margin-top: 30px;
+}
+
+.list_item .time {
+    margin-right: 20%;
+    font-size: 25px;
+}
+
+.list_item .time .ampm {
+    font-size: 20px;
+}
+
+.list_item .title, .list_item .author {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    
+}
+
+.list_item .author {
+    color: #CFCFD1;
+}
+/* LIST PROGRAMS */
+
+
+
+/* SPONSORS */
+.sponsors_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sponsor {
+    width: 33%;
+}
+
+.be_a_sponsor {
+    width: 120px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background: #3F4046;
+    margin: auto;
+}
+
+.be_a_sponsor:hover {
+    background: linear-gradient(45deg, #b20023,#FB8A01);
+}
+
+/* SPONSORS */
+
+
+/* FOOTER */
+footer {
+    margin-top: 120px;
+    height: 40vh;
+    background: #1B1D24;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.footer_wrapper .connect {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .about_event, .quick_links, .connect {
+    width: 30%;
+
+} */
+
+.footer_title {
+    color: #81745E;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* BODY */
+.about_text {
+    color: #cfcfd1;
+}
+.quick_links {
+    display: flex;
+    flex-direction: column;
+}
+.connect_social {
+    width: 95%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.connect_item {
+    width: 16px;
+}
+
+
+/* FOOTER */
