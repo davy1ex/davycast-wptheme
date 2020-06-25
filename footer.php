@@ -29,10 +29,11 @@
         
     </footer>
 
-    <script>
-        AOS.init();
-    </script>
+    
 
     <?php wp_footer(); ?>
 </body>
+<script>
+        AOS.init();
+    </script>
 </html>

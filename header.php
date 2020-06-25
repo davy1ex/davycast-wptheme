@@ -28,7 +28,7 @@
             </div>
 
             <div class="header_container">
-                <a href="index.html"><div id="index" class="header_item">HOME</div></a>
+                <a href="index.php"><div id="index" class="header_item">HOME</div></a>
                 <a href="about_us.html"><div id="about_us" class="header_item">ABOUT US</div></a>
                 <a href="contacts.html"><div id="speakers" class="header_item">SPEAKERS</div></a>
                 <a href="news.html"><div id="news" class="header_item">NEWS</div></a>
