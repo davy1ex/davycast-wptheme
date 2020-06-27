@@ -104,14 +104,28 @@ header {
 .header_container {
     display: flex;
 }
-.header_item {
+
+header .logo {
     margin: 30px 15px;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+header ul li {
+    display: block;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin: 35px 15px;
     line-height: 30px;
 }
 
-.active, .header_item:hover {
+header li a:hover {
     color: #FF5733;
-    /* border-bottom: 1px solid #FF5733; */
 }
 
 .logo:hover {

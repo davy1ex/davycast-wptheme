@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davycast - Index page</title>
-
-	
-
-    <!-- styles -->
-    <!-- <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css"> -->
-    
-    <!-- custom css -->
-    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/aos.css"> -->
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
@@ -27,14 +17,24 @@
                 <a href="index.html"><div class="header_item logo">davy<span>cast</span></div></a>
             </div>
 
-            <div class="header_container">
-                <a href="index.php"><div id="index" class="header_item">HOME</div></a>
-                <a href="about_us.html"><div id="about_us" class="header_item">ABOUT US</div></a>
-                <a href="contacts.html"><div id="speakers" class="header_item">SPEAKERS</div></a>
-                <a href="news.html"><div id="news" class="header_item">NEWS</div></a>
+           
+            <?php wp_nav_menu( array(
+                'theme_location'    => 'mainmenu',
+                'container'         => 'div',
+                'menu_class'        => 'header_container',
+            ));?>
+
+            <!-- <div class="header_container">
+                <ul>
+                    <li class="header_item"><a href="index.php">HOME</a></li>
+                    <li class="header_item"><a href="about_us.html">ABOUT US</a></li>
+                    <li class="header_item"><a href="contacts.html">SPEAKERS</a></li>
+                    <li class="header_item"><a href="news.html">NEWS</a></li>
+
+                    <li class="header_item"><a href="contacts.html">CONTACTS</a></li>
+                    <li class="header_item"><a href="buy_tickets.html">BUY TICKETS</a></li>
+                </ul>
                 
-                <a href="contacts.html"><div id="contacts" class="header_item">CONTACTS</div></a>
-                <a href="buy_tickets.html"><div id="buy_tickets" class="header_item buy_button">BUY TICKETS</div></a>
-            </div>
+            </div> -->
         </div>
     </header>
