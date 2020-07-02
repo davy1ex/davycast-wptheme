@@ -1,0 +1,36 @@
+.content-wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.first {
+    width: 75%;
+    
+}
+
+.first .podcast {
+    background: white;
+    
+    
+    margin: auto;
+    margin-bottom: 10px;
+}
+.podcast img {
+    margin: auto;
+    width: 100%;
+    width: 100%;
+}
+
+.second {
+    width: 20%;
+}
+
+.second .widget { 
+    color: black;
+    background: white;
+    margin-bottom: 50px;
+}

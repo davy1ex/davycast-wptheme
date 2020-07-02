@@ -1,9 +1,14 @@
 <aside id="sidebar">
-<div class="widget categories">
-    <ul class="link-list cf">
-        <li><a href="/">home</a></li>
-        <li><a href="/">buy tickets</a></li>
-        <li><a href="/">contacts</a></li>
-    </ul>
-</div>
+    <?php dynamic_sidebar( 'right_sidebar' ); ?>
+    <div class="widget widget_rss">
+        tut instagramа
+    </div>
+
+    <div class="widget widget_text">
+        tut instagram
+    </div>
+
+    <div class="widget twitter">
+        tut twitter
+    </div>
 </aside>

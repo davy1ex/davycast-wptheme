@@ -116,10 +116,4 @@
     </div>
 
 </div>
-
-<!-- стили будут потом -->
-<div id="secondary">
-    <?php get_sidebar(); ?>
-
-</div>
 <?php get_footer(); ?>
